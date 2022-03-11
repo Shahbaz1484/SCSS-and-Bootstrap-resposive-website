@@ -1,0 +1,130 @@
+
+
+/*      Custom Style For Home       */
+
+
+/*    Banner    */
+.banner{
+    .banner-cont{
+        @include bgimage("../images/banner.jpg");
+        min-height: 361px;
+        border-radius:8px;
+        
+    }
+    h1{
+        display: inline-block;
+        background-color:$color2;
+        margin:0 0 34px -16px;
+        padding:27px 50px 27px 53px;
+        border-radius: 0px 9px 9px 0px;
+        &:before, &:after{
+            @include pseudo();
+            @include w-h(15px, 100%);
+        }
+        &:before{
+            background-color:$color8;
+            @include pseudo-topright(0, 27px);
+        }
+        &:after{
+            background-color:$color9;
+            @include pseudo-topright(0, 12px);
+        }
+    }
+}
+
+
+/*    Misssion    */
+.mission{
+    &:before{
+        @include pseudo();
+        @include z-index(-1);
+        @include bgimage("../images/elipse2.svg",35% auto,top left);
+        @include w-h(calc(100% - 32px), 548px);
+        @include pseudo-topleft(-55px, 32px);
+    }
+    padding:102px 0 0;
+    h2{
+        margin:0 0 26px;
+    }
+    p{
+        margin:0 0 55px;
+    }
+}
+
+
+/*   senitize    */
+.senitize{
+    background-color:#f1f8f9;
+    padding:42px 0 0;
+    .senitize-box{
+        border-radius: 17px;
+        margin-bottom:12px;
+        padding: 21px 15px;
+        & > div{
+            &:nth-child(1){
+                @include maxWith(113px);
+            }
+            &:nth-child(2){
+              width:calc(100% - 113px);
+            }
+        }
+    }
+    h5{
+        @include fsize(28px, 28px);
+        margin:0 0 2px;
+        font-weight: 600;
+    }
+    &:not(.not-senitize) p{
+        @include maxWith(508px);
+        margin-bottom:0;
+    }
+} 
+.senitize-box1{
+  background-color:$color11; 
+}
+.senitize-box2,.senitize-box4{
+    background-color:$color13; 
+}
+.senitize-box3{
+    background-color:$color12; 
+}
+
+/*   learn-more   */
+.learn-more{
+    p{
+        @include fsize(18px, 18px);
+        margin:0 0 24px;
+    }
+}
+
+/*  news   */
+.news{
+    padding: 105px 0 0;
+    .container{
+        &:after{
+            @include pseudo();
+            @include z-index(-1);
+            @include bgimage("../images/elipse3.svg",60% auto,top right);
+            @include w-h(100%, 552px);
+            @include pseudo-topright(0, -32px);
+        }
+    }
+    h2{
+        margin:0 0 52px;
+    }
+    h6{
+        font-weight:700;
+        margin:0 0 2px;
+        font-size:inherit;
+        line-height: inherit;
+    }
+    .date{
+        font-size:18px;
+        margin:0 0 14px;
+        color:#8E8E8E;
+    }
+}
+.news-box{
+    padding: 0 15px;
+    margin-bottom:30px;
+}

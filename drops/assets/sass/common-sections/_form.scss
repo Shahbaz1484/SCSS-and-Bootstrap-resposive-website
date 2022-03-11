@@ -1,0 +1,75 @@
+
+.contact-form{
+    input{
+        &.form-control{
+            background-color:#F0F0F0;
+        }
+        &,&::placeholder{
+            color:$color1;
+        }
+    }
+    .col-xl-6{
+        input{
+            width:calc(100% - 6.5px);
+        }    
+    }
+    label{
+        font-size:14px;
+        line-height: 17.22px;
+        margin:0 0 7px;
+    }
+}
+.selectbox-btn,
+.contact-form input,
+textarea.form-control{
+    border-radius:8px;
+    height: 62px;
+    padding-left:23px;
+    padding-right:23px;
+    margin-bottom:13px;
+    &,&:focus{
+        border:none;
+        outline:none;
+    }
+    &:focus{
+        box-shadow:unset;
+    }
+    &,&::placeholder{
+        font-size:22px;
+        line-height: 27px;
+    }
+}
+.selectbox-btn{
+    color:#D6D6D6;
+    &.selectbox-btn_active{
+        color:$color1;
+    }
+    & + .dropdown-menu{
+        background-color:#F0F0F0;
+        a{
+            color:$color1;
+            font-size:22px;
+            line-height: 27px;
+            &:focus,&:active{
+                background-color:$color2;
+                color: #fff;
+            }
+        }
+    }
+    &:after{
+        @include pseudo(url("../images/arrow.png"));
+        @include z-index(1);
+        @include pseudo-topright(50%, 42px);
+        transform:translateY(-50%);
+    }
+}
+textarea.form-control{
+    min-height:160px;
+    max-height: 160px;
+    resize:none;
+    margin:0 0 20px;
+    &,&:focus{
+        box-shadow:none;
+        background-color:#F0F0F0;
+    }
+}

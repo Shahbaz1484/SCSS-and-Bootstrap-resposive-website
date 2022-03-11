@@ -1,0 +1,38 @@
+
+.contact-banner{
+    padding-top:70px;
+}
+
+/*   contact-info  */
+.contact-info{
+    padding:135px 0 0;
+}
+.contact-info-wrapper{
+    margin-bottom: 85px;
+    @include maxWith(583px);
+    & > div:first-child{
+        @include maxWith(350px);
+        ul li{
+            margin-bottom:38px;
+        }
+    }
+    & > div:last-child{
+        width:calc(100% - 350px);
+        ul li:not(:last-child){
+            margin-bottom:12px;
+        }
+    }
+    ul{
+        li{
+            &,& a{
+                font-size:24px;
+                line-height: 29px;
+                color:$color1;
+            }
+            span{
+                font-size:18px;
+                line-height:18px;
+            }
+        }
+    }
+}

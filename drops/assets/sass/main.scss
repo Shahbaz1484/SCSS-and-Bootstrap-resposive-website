@@ -1,0 +1,40 @@
+
+
+
+/*      Theme control files    */
+
+@import "theme-layout/variables";
+@import "theme-layout/font";
+@import "theme-layout/mixin";
+@import "theme-layout/theme-control";
+
+
+
+/*  Common Sections For Top   */
+
+@import "common-sections/header";
+@import "common-sections/form";
+
+
+
+/*     Pages  Styles         */
+
+@import "pages/home";
+@import "pages/health-and-safty";
+@import "pages/sanitiser-stations";
+@import "pages/app";
+@import "pages/contact-us";
+
+
+
+
+/*  Common Sections For Bottom   */
+
+@import "common-sections/footer";
+
+
+
+
+/*     Responsiveness        */
+
+@import "theme-layout/responsive";

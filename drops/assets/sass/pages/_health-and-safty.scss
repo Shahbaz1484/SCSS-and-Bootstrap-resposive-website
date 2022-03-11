@@ -1,0 +1,72 @@
+
+/*   health and safety    */
+
+.healthy-and-safty{
+    .banner-cont{
+        background-image:url(../images/healthy-and-safty.jpg);
+    }
+}
+
+/*   healthy-and-safty-sec   */
+.healthy-and-safty-sec{
+    padding:210px 0;
+    &,&:before{
+        background-color: #FBF5F5;
+    }
+    &:before{
+        @include pseudo();
+        @include z-index(1);
+        @include w-h(434px, 109px);
+        @include pseudo-topright(-30px);
+        clip-path: polygon(1% 100%, 100% 100%, 100% 0);
+    }
+    h2{
+        &+p{
+            @include maxWith(694px);
+            margin-bottom:85px;
+        }
+    }
+}
+.healthy-and-saft-box{
+    margin-bottom:68px;
+    & > div:first-child{
+        @include maxWith(45px);
+    }
+    & > div:last-child{
+        width:calc(100% - 45px);
+    }
+    h4{
+        font-family: SofiaSans-bold;
+        margin:0 0 2px;
+    }
+}
+.circle-box{
+    @include rounded(25px, 25px);
+    border:3px solid #2D4644;
+    
+}
+.healthy-and-saft-wrapper{
+    & > .col-12{
+        &:nth-child(even){
+            & > .healthy-and-saft-box{
+                .circle-box{
+                    background-color:#2D4644;
+                }
+            }
+        }
+        & > .crm-wrapper{
+            & > .healthy-and-saft-box:nth-child(2){
+                .circle-box{
+                    background-color:#2D4644;
+                }
+            }
+        } 
+    }
+}
+
+/*   health-safty-learn   */
+.health-safty-learn{
+    padding: 20px 0 70px;
+}
+
+

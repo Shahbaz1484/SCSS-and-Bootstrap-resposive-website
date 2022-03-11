@@ -1,0 +1,114 @@
+
+/*  sanitiser-stations Page  */
+.better-senitize-page{
+    &:after{
+        background-size: 56% 100%;
+    }
+}
+
+/*   better-senitize   */
+.better-senitize{
+    padding: 0 0 30px;
+}
+.better-senitize-cont{
+    @include pseudo();
+    @include pseudo-bottomleft(225px);
+    h1{
+        padding-right:28px;
+        position: relative;
+        // @include maxWith(474px);
+        &:before{
+            background-color: #BCF6E5;
+            right: -27px;
+        }
+        &:after,&:before{
+            top:0;
+            @include w-h(15px, 120px);
+            @include pseudo();
+            border-radius: 0px 9px 9px 0px;
+        }
+        &:after{
+            background-color: #A2F6E5;  
+            right: -12px
+        }
+    }
+}
+
+/*   sanitiser-staton   */
+.sanitiser-staton{
+    h2{
+        margin: 0 0 8px;
+    }
+    p{ 
+        @include maxWith(694px);
+    }
+    &:before{
+        background-size: 35% 100%;
+        background-image:url(../images/elipse4.svg);
+        top:-220px;
+    }
+}
+.sanitiser-staton-text{
+    padding-bottom: 215px;;
+}
+.sanitiser-staton-box{
+    background-color: #F7F7F7;
+    border-radius: 7px;
+    @include maxWith(476px);
+    & > div:first-child{
+        @include maxWith(190px);
+        img{
+            @include pseudo();
+            @include pseudo-topleft(50%);
+            transform: translateY(-50%);
+            @include z-index(1);
+        }
+    }
+    & > div:last-child{
+        width:calc(100% - 190px);
+        padding: 22px 22px 22px 0;
+    }
+    h4{
+        margin:0 0 10px;
+        img{
+            margin-left:6px;
+        }
+    }
+}
+.sanitiser-staton-wrapper{
+    & > div{
+       &:nth-child(1),
+       &:nth-child(2){
+        margin-bottom:175px;
+       }
+       &:nth-child(2),
+       &:nth-child(3){
+            .sanitiser-staton-box{
+                background-color:#F0F8F7;
+            }
+        }
+        &:nth-child(3),
+        &:nth-child(4){
+            margin-bottom:80px;
+        }
+    }
+    
+}
+
+/*   crm     */
+.crm{
+    background-color:#F1F5F9;
+    .healthy-and-saft-wrapper{
+        padding-top:50px;
+    }
+}
+.crm-wrapper{
+    h4{
+        margin:0 0 32px;
+    }
+    .healthy-and-saft-box{
+        margin:0 0 22px;
+    }
+}
+
+

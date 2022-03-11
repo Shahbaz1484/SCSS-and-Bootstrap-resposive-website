@@ -1,0 +1,18 @@
+
+
+.life-style{
+    &,&:before{
+        background-color:#FBF9F5;
+    }
+}
+.life-style-app{
+    @include bgimage("../images/life-style-app.png",contain);
+    height:530px;
+}
+// .introduction-app{
+//     .better-senitize-cont{
+//         h1{
+//             @include maxWith(560px);
+//         }
+//     }
+// }

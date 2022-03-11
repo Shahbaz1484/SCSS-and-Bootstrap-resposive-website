@@ -1,0 +1,97 @@
+
+
+/*    All Mixins Defined     */
+
+@mixin bgimage($img-url, $bg-size:cover, $position: center center, $repeat:no-repeat){
+    background-image:url($img-url);
+    background-size: $bg-size;
+    background-position: $position;
+    background-repeat:no-repeat;
+}
+
+@mixin simple-flex($cont:center, $item:center){
+    display:flex;
+    justify-content: $cont;
+    align-items:$item;
+}
+
+@mixin simple-button($display:inline-block, $color: $color1, $border:3px, $brd-radius: 8px ){
+    display: $display;
+    color: $color;
+    font-size:24px;
+    line-height:24px;
+    border-width: $border;
+    border-style:solid;
+    border-radius: $brd-radius;
+    padding: 11px 21px;
+    position: relative;
+    background-image: linear-gradient($color2, $color2);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .4s, color .4s;
+}
+@mixin simple-button-bg($bgcolor: transparent,$bcolor:$color2){
+    background-color:$bgcolor;
+    border-color:$bcolor;
+}   
+
+@mixin simple-button-hover($bg-c:$color2, $bc:$color2){
+    background-position: 50% 50%;
+    background-image: linear-gradient($bg-c, $bg-c);
+    background-size: 100% 100%;
+}
+
+@mixin pseudo($cont:""){
+    content: $cont;
+    position: absolute;
+}
+
+@mixin z-index($z-index:-1){
+    z-index: $z-index;
+}
+
+@mixin w-h($width:100%, $height:100%){
+    width: $width;
+    height: $height;
+}
+
+@mixin pseudo-topleft($top: 0,$left: 0){
+    top: $top;
+    left: $left;
+}
+
+@mixin pseudo-topright($top: 0,$right: 0){
+    top: $top;
+    right: $right;
+}
+
+@mixin pseudo-bottomleft($bottom: 0,$left: 0){
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin pseudo-bottomright($bottom: 0,$right: 0){
+    bottom: $bottom;
+    right: $right;
+}
+
+@mixin maxWith($mw){
+    width:100%;
+    max-width: $mw;
+}
+
+@mixin fsize($fsize, $lheight){
+   font-size: $fsize;
+   line-height: $lheight;
+}
+
+@mixin rounded($wdth, $hght, $brd-radius:50%){
+    width: $wdth;
+    height: $hght;
+    border-radius: $brd-radius;
+ }
+
+@mixin mbl-pseudo-tr($scale){
+    transform: scale($scale);
+}

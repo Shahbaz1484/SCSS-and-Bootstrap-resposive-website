@@ -1,0 +1,48 @@
+
+footer{
+    background: linear-gradient(0deg, #F4E9E7 0%, rgba(244, 233, 231, 0) 96.99%);
+    padding:100px 0 25px;
+    h3{
+        @include fsize(28px, 28px);
+        margin:0 0 30px;
+    }
+    ul{
+        padding-left:35px;
+        border-left:2px solid;
+        min-height:204px;
+        li{
+            a{
+                @include fsize(19px, 33.91px);
+                color:inherit;
+            }
+        }
+    }
+    p{
+        max-width:655px;
+        @include fsize(16px, 28px);
+    }
+}
+.ul-one{
+    border-color:$color2;
+    li{
+        a:hover{
+            color:$color2;
+        }
+    }
+}
+.ul-two{
+    border-color:#E07F00;
+    li{
+        a:hover{
+            color:#E07F00;
+        }
+    }
+}
+.ul-three{
+    border-color:#E00000;
+    li{
+        a:hover{
+            color:#E00000;
+        }
+    }
+}
